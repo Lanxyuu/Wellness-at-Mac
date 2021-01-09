@@ -1,0 +1,86 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JOptionPane;
+
+/**
+ *@author Sophie Lan
+ *@version 1.0, May 29th, 2018
+ *@param nameText JTextField for the user to input their name
+ */
+
+public class NameBox extends JFrame implements ActionListener
+{
+    private JTextField nameText;
+    private JTextField outputText;
+    private SpringLayout spring;
+    private JPanel frame;
+    private String playerName;
+    private int level;
+    
+    public NameBox(int l)
+    {
+        level = l;
+        
+        //creating the frame
+        this.setVisible(true);
+        this.setSize(300, 200);
+        this.setTitle("Please enter your name!");
+        frame = new JPanel();
+        frame.setVisible(true);
+        spring = new SpringLayout();
+        frame.setSize(350, 160);
+        frame.setLayout(spring);
+        
+        //creating each component
+        JLabel nameLabel = new JLabel ("Name: ");
+        JButton submitButton = new JButton ("Submit");
+        outputText = new JTextField(30);
+        nameText = new JTextField(10);
+        
+        //setting constraint values for nameLabel
+        SpringLayout.Constraints nameC = spring.getConstraints(nameLabel);
+        nameC.setY(Spring.constant(5));
+        nameC.setX(Spring.constant(10));
+        frame.add(nameLabel);
+        
+        //setting constraint values for nameText
+        SpringLayout.Constraints nameTC = spring.getConstraints(nameText);
+        nameTC.setY(Spring.constant(5));
+        nameTC.setX(Spring.sum(Spring.constant(5), nameC.getConstraint("East")));
+        frame.add(nameText);
+        
+        //setting constraint values for submitButton
+        SpringLayout.Constraints submitC = spring.getConstraints(submitButton);
+        submitC.setY(Spring.constant(60));
+        submitC.setX(Spring.constant(5));
+        submitButton.addActionListener(this);
+        
+        frame.add(submitButton);
+        this.add(frame);
+        revalidate();
+    }
+    
+    public void actionPerformed (ActionEvent ae)
+    {
+        if (nameText.getText().equals("") || nameText.getText().length() > 10) {
+            JOptionPane.showMessageDialog(null, "Please enter a valid name under 10 characters!");
+            nameText.setText("");
+        }
+        else {
+            playerName = nameText.getText();
+            dispose();
+            
+            if (level == 1) {
+                LevelOne oneA = new LevelOne(playerName);
+            }
+            
+            else if (level == 2) {
+                LevelTwo two = new LevelTwo(playerName);
+            }
+            else if (level == 3) {
+                LevelThree threeA = new LevelThree(playerName);
+            }
+        }
+    }
+}

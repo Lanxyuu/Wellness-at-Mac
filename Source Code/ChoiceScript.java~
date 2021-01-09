@@ -1,0 +1,59 @@
+import java.io.*;
+import java.awt.*;
+import javax.swing.*;
+
+//special script class, to read dialogue choices
+public class ChoiceScript 
+{
+    //the text files
+    private String badChoiceFile;
+    private String goodChoiceFile;
+    
+    //variables for storing dialogue of bad choice, and dialogue of good choice
+    private String badChoice;
+    private String goodChoice;
+    
+    //current line of the script
+    private int line = 1;
+    
+    //BufferedReader
+    BufferedReader badChoiceReader;
+    BufferedReader goodChoiceReader;
+    
+    public ChoiceScript(String b, String g) {
+        badChoiceFile = "./Scripts/Choices/" + b + ".txt";
+        goodChoiceFile = "./Scripts/Choices/" + g + ".txt";
+    }   
+    
+    //assigns each variable the next corresponding line in the text files
+    public void assign() {
+        try {
+            badChoiceReader = new BufferedReader(new FileReader(badChoiceFile));
+            goodChoiceReader = new BufferedReader(new FileReader(goodChoiceFile));
+            
+            for (int i = 0; i < line; i++) {
+                if (i == line - 1) {
+                    badChoice = badChoiceReader.readLine();
+                    goodChoice = goodChoiceReader.readLine();
+                }
+                else {
+                    badChoiceReader.readLine();
+                    goodChoiceReader.readLine();
+                }
+            }
+            badChoiceReader.close();
+            goodChoiceReader.close();
+        }
+        catch (IOException e) {
+        }
+        line++;
+    }
+    
+    public String getBadChoice() {
+        return badChoice;
+    }
+    
+    public String getGoodChoice() {
+        return goodChoice;
+    }
+}

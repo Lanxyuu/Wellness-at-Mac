@@ -1,0 +1,46 @@
+import java.io.*;
+import java.awt.*;
+
+public class HighScoreReader {
+    private ArrayList<String> names;
+    private ArrayList<Integer> scores;
+    private String file;
+    private BufferedReader input;
+    
+    
+    public HighScoreReader(String f) {
+        file = "./Scores/" + f + ".txt";
+        names = new ArrayList<String>;
+        scores = new ArrayList<Integer>;
+    }
+    
+    //assigns each variable the next corresponding line in the text files
+    public void read() {
+        String line = "";
+        int counter = 0;
+        try {
+            input = new BufferedReader(new FileReader(file));
+            while (line != null) {
+                line = input.readLine();
+                counter++;
+                if (!(line.equals("arglebargle") && (counter % 2 == 1)) || !(line.equals("69") && (counter % 2 == 0))) {//not a default
+                    if (counter % 2 == 1)
+                        names.add(line);
+                    else if (counter % 2 == 0)
+                        scores.add(Integer.parseInt(line));
+                }
+            }
+        }
+        input.close();
+        catch (IOException e) {
+        }
+    }
+    
+    public ArrayList<String> getNames() {
+        return names;
+    }
+    
+    public ArrayList<Integer> getScores() {
+        return scores;
+    }
+}

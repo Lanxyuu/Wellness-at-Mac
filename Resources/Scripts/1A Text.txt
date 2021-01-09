@@ -1,0 +1,119 @@
+(It’s a sunny Monday morning and I’m on my way to school, just like everybody else.) 
+(…)
+(Hmm... it’s almost grade 11. I should really start planning for my future.)
+(I should go look for some clubs to join today. Maybe I’ll even become an exec. That’ll look pretty good on my resume.)
+(But the school year’s almost over. Will there even be any clubs that would accept execs this late in the year?)
+(I guess I could fill out an application to be an exec next year, but I’m not even in any clubs.)
+HEY [player]!!! Wait up!
+(A girl runs towards me and slows down as she reaches me.)
+[player]! Why didn't you wait for me? We always walk together!
+(It's my childhood friend, Sabrina.)
+Oh, hey, Sabrina. I was just gonna go to the student services office. 
+I think I wanted to ask my guidance counselor about universities I should apply to, and maybe some internships. 
+I should really pad my resume with something, because I’ve done literally nothing these past two years… 
+Oh, that’s cool. I’m just heading to a morning meeting.
+Why does it have to be on Monday mornings?? I barely get any sleep these days!
+A meeting? For which club?
+Wellness@Mac! It’s the wellness club that Monica started last year, remember?
+Oh, right. How’s it going?
+Oh, well, I guess it’s not going too bad. People are showing up… but that’s about it.
+Wait, I was just thinking of something! Do you think there’s any space left on the exec team?
+Wait, you? As an exec?
+Actually, that'd be great! We could use an extra pair of hands!
+Monica would be pretty cool with it, and since I’m vice president, I can give you something right away!
+(Wow! That fast?)
+That'd be so great! Thank you so much! Can I start today?
+Yeah! We have a meeting today after school in the English room! Don’t ditch, okay?
+Haha, I won't.
+After school. . .
+(School has ended, and I'm now making my way towards the English room for the meeting...)
+(I'm kind of nervous. What if this club isn't right for me?)
+(I just kinda accepted Sabrina's invitation without really thinking about it, so I'm not sure what to expect...)
+Heeeey! You came! Yay!!!
+Yeah! Didn't I say that I was coming?
+Oh!
+Hi! Are you the [player] that Sabrina told me about? The one who wants to join the exec team?
+Yup!!
+Hello, you must be Monica, right? I'm [player]. Sabrina introduced me to Wellness@Mac. 
+I'd love to join, if you're okay with it.
+Yeah, sure! We don't have that many members anyway, so this would actually be really helpful!
+(Wow! That was a lot quicker than I'd thought it'd be. I'm relieved.)
+Thank you so much!
+Okay! Then let's start setting up before everyone comes!
+. . . !
+Who's this? I didn't know we were still accepting exec members...
+Have you ever been to our club?
+Natalie, this is [player]. We have one more person to help out with our club!
+Sorry for doing this so suddenly...
+Well, I guess it doesn't matter...
+As long as you're useful.
+. . . Oh, hi guys! Sorry for being late, I had to take care of somethings...
+Don't worry about it, Yulia. Also, meet [player], our newest member!
+Oh, hello, [player]! I'm Yulia. I'm pleased to make your acquaintance.
+Same here!
+Um, [player], nice to meet you too, I guess. Since you're part of our club now and stuff.
+Okay everyone! Now that we're done with introductions, let's begin preparing for our event!
+It’s perfect that you offered to help out, [player], since it’s our annual Wellness Week and we’re hosting a big event today!
+Oh! What's happening?
+We're teaching people about healthy eating and food preparation while making snacks.
+Today, we're making yogurt and fruit parfaits!
+That sounds cool! I guess I'll help setting up the materials and supplies then!
+(We begin setting up supplies. I take out packages of granola and fruit while Monica sets up the yogurt.)
+(Soon, students start coming in. They all look happy and content, making their own parfaits and sitting with their friends.)
+Thanks for coming, everyone!
+One parfait per person, please! You can get seconds once everyone gets one!
+Tell us if we're running low on anything!
+(Wow. Once the club is actually hosting an event, all the club members become so mature and responsible.)
+(Sabrina’s cheerfully welcoming everyone as they enter the room 
+while Yulia and Natalie are going around to make sure everything’s okay.)
+(I notice Monica in the corner of the room, talking to a guy who I think is a ninth-grader. 
+I watch them talk for a few seconds. The ninth-grader looks a bit upset, while Monica looks concerned.)
+Oh, [player]! Can you come here for a second?
+Okay!
+(I walk towards them. I wonder what's happening...?)
+Uh, hi! I'm Phil!
+I'm [player]! Nice to meet you.
+[player]’s a new exec who might be able to help you.
+Oh, uh, yeah! How can I help, if you don't mind?
+No, I don’t mind! 
+It’s just that my eating habits recently have been getting worse, and I thought I could get some help here.
+What do you mean?
+I’ve been waking up late for school more frequently, so I haven’t been able to make breakfast.
+I’m always really hungry by the time it’s lunch, so then I end up buying a lot of food from the caf.
+And then I end up feeling really bad after because the cafeteria food is really unhealthy.
+Wow, that sounds pretty bad. Have you tried doing anything to change these habits?
+I’ve tried waking up early to make breakfast, but I always end up sleeping in... 
+It’s not like I’m not getting enough sleep, though! 
+The main problem is that I don’t know what to make for breakfast and end up taking too much time.
+I see... 
+(Monica smiles at me encouragingly. 
+I think she’s happy that I’m already contributing to the club, but I’m not sure if I can do this alone...)
+Well, don’t worry, Phil! We’ll think of ways to help you. When can we meet up again?
+Okay! I’m fine with after school!
+Sure thing! Then let’s meet in this classroom again.
+(Phil leaves the room and the rest of the event finishes.)
+(Before I know it, the event’s over and we start cleaning up the classroom.)
+Sorry for being so sudden about Phil like that, but as a new exec of the club, you’ll have to learn how to help people!
+It was a really good opportunity.
+Yeah, of course! I’m just a bit lost on how exactly to help him...
+What's the main problem?
+I think it’s him not being able to make breakfast because he doesn’t have enough time in the morning. 
+Then he ends up eating a lot for lunch and feels bad about it. 
+So if he’s able to eat breakfast in the morning, it’ll help him a lot, because then he won’t overeat for lunch.
+Why can’t he wake up earlier? Does he sleep late or something?
+I don’t think so. I’m pretty sure he just doesn’t like getting up.
+Why don’t you search for some healthy breakfast recipes that are quick and easy? 
+I’m sure that there are some recipes out there that are both healthy and fast to make.
+Great idea! Then he’ll be able to both eat breakfast and eat healthier.
+You can also think of some ways for him to get up more easily in the morning. 
+That way, he won’t be stressed while making his breakfast. And it’s overall just healthier for him.
+Yeah! That makes so much sense! 
+Wow, you guys are good at this.
+Haha, it just comes with experience.
+Okayyy! We’re done cleaning up!
+Then I guess we’re done for today. Good work everyone!
+At home . . .
+(Now that I’m done all my homework, I should start looking for some recipes...)
+(I think I’ll find five. That’s a good number.)
+. . .
+END

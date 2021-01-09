@@ -1,0 +1,98 @@
+import java.io.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class Script 
+{
+    //playerName
+    private String playerName = "";
+    
+    //the text files
+    private String textFile;
+    private String speakerFile; 
+    private String characterFile; 
+    private String bgFile;
+    
+    private boolean end = false;
+    
+    //variables for what's being said, name of speaker, name of pic of speaker, and background name
+    private String textString;
+    private String charName;
+    private String charPic;
+    private String bgPic;
+    
+    //current line of the script
+    private int line = 1;
+    
+    //BufferedReader
+    BufferedReader textReader;
+    BufferedReader speakerReader;
+    BufferedReader characterReader;
+    BufferedReader bgReader;
+    
+    public Script(String t, String s, String c, String b, String p) {
+        playerName = p;
+        textFile = "./Scripts/" + t + ".txt";
+        speakerFile = "./Scripts/" + s + ".txt";
+        characterFile = "./Scripts/" + c + ".txt";
+        bgFile = "./Scripts/" + b + ".txt";
+    }   
+    
+    //assigns each variable the next corresponding line in the text files
+    public void assign() {
+        try {
+            textReader = new BufferedReader(new FileReader(textFile));
+            speakerReader = new BufferedReader(new FileReader(speakerFile));
+            characterReader = new BufferedReader(new FileReader(characterFile));
+            bgReader = new BufferedReader(new FileReader(bgFile));
+            
+            for (int i = 0; i < line; i++) {
+                if (i == line - 1) {
+                    textString = textReader.readLine();
+                    charName = speakerReader.readLine();
+                    charPic = characterReader.readLine();
+                    bgPic = bgReader.readLine();
+                }
+                else {
+                    textReader.readLine();
+                    speakerReader.readLine();
+                    characterReader.readLine();
+                    bgReader.readLine();
+                }
+            }
+            textReader.close();
+            speakerReader.close();
+            characterReader.close();
+            bgReader.close();
+        }
+        catch (IOException e) {
+        }
+        line++;
+    }
+    
+    public String getText() {
+        if (textString.equals("END"))
+            end = true;
+        else if (textString.indexOf("[player]") > -1){
+            String newText = textString.substring(0, textString.indexOf("[player]")) + playerName + textString.substring(textString.indexOf("[player]") + 8);
+            return newText;
+        }
+        return textString;
+    }
+    
+    public boolean end() {
+        return end;
+    }
+    
+    public String getCharName() {
+        return charName;
+    }
+    
+    public String getCharPic() {
+        return "Images/Characters/" + charPic + ".png";
+    }
+    
+    public String getBG () {
+        return "Images/Backgrounds/" + bgPic + ".jpg";
+    }
+}

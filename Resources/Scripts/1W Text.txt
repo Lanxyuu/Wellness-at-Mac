@@ -1,0 +1,39 @@
+The next day...
+(I make my way to the classroom with a list of the recipes and tips I got.)
+Hi!
+Hi, Phil!
+I found some recipes you can use for breakfast. They're healthy AND fast!
+Wow, thanks!
+No problem! I also found some morning tips that you can use to wake up without feeling too tired.
+(Suddenly, Monica steps into the room.)
+Hi, [player] and Phil! I'm just here to check things out. How's everything so far?
+Great! I learned so much from [player]. 
+Here, look at the recipe and tips I got!
+...
+(Monica begins reading the recipes and tips, her expression unreadable...)
+...
+Wow! This is actually really well-done!
+Thanks!
+Yeah! I’m really excited to try out these new recipes and tips! 
+Thank you so much!
+(Phil leaves the room, happily reading over his new recipes and tips.)
+I wasn’t really sure if you were going to be able to this, especially at such a short notice.
+I underestimated you! You did amazing!
+Thank you! I also need to thank you for giving me the opportunity to do this. 
+I learned a lot along the way, too.
+That’s good.
+. . . !
+Oh, [player]! There you are! I was waiting for you! Let's go home already!!!
+Okay! Bye Monica!
+Bye!
+On the way home. . .
+Hey, [player]? 
+Yeah?
+Sorry for not being able to help you come up with ideas to help Phil yesterday... I had a lot of homework.
+Don’t worry about it! It felt nice being able to help out and contribute to the club.
+That’s good! I’m really glad you joined.
+Me too! I’ll have to thank you for introducing it to me, though.
+No problem!
+(I wasn’t too sure about joining the club at first, but it was definitely the right decision.)
+(Now that I’m officially an exec, I’m looking forward to whatever comes next for our Wellness Club!)
+END

@@ -1,0 +1,48 @@
+import java.io.*;
+import java.awt.*;
+
+public class HighScoreWriter {
+    private ArrayList<String> names;
+    private ArrayList<Integer> scores;
+    private String file;
+    private PrintWriter output;
+    
+    
+    public HighScoreWriter(ArrayList<String> n, ArrayList<Integer> s, String f) {
+        file = "./Scores/" + f + ".txt";
+        names = n;
+        scores = s;
+    }
+    
+    //assigns each variable the next corresponding line in the text files
+    public void write() {
+        try {
+            output = new PrintWriter(new FileWriter(file));
+            for (int x = 0; x < names.size(); x++) {
+                output.println(names.get(x));
+                output.println(scores.get(x));
+            }
+            if (names.size() < 10) {
+                for (int x = names.size(); x < 10; x++) {
+                    output.println("arglebargle");
+                    output.println("69");
+            }
+        }
+        output.close();
+        catch (IOException e) {
+        }
+    }
+        
+    public void clear() {
+        try {
+            input = new PrintWriter(new FileWriter(file));
+            for (int x = 0; x < 10; x++) {
+                input.println("arglebargle");
+                input.println("69");
+            }
+        }
+        input.close();
+        catch (IOException e) {
+        }
+    }
+}

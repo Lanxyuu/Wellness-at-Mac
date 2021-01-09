@@ -1,0 +1,79 @@
+import java.io.*;
+import java.awt.*;
+import javax.swing.*;
+
+//special script class for level 3, because most of it is texting
+public class TextingScript 
+{
+    //playerName
+    private String playerName = "";
+    
+    //the text files
+    private String textFile;
+    private String speakerFile; 
+    
+    private boolean end = false;
+    
+    //variables for what's being said, name of speaker, name of pic of speaker, and background name
+    private String textString;
+    private String speakerName;
+    
+    //current line of the script
+    private int line = 1;
+    
+    //BufferedReader
+    BufferedReader textReader;
+    BufferedReader speakerReader;
+    
+    public TextingScript(String t, String s, String p) {
+        playerName = p;
+        textFile = "./Scripts/" + t + ".txt";
+        speakerFile = "./Scripts/" + s + ".txt";
+    }   
+    
+    //assigns each variable the next corresponding line in the text files
+    public void assign() {
+        try {
+            textReader = new BufferedReader(new FileReader(textFile));
+            speakerReader = new BufferedReader(new FileReader(speakerFile));
+            
+            for (int i = 0; i < line; i++) {
+                if (i == line - 1) {
+                    textString = textReader.readLine();
+                    speakerName = speakerReader.readLine();
+                }
+                else {
+                    textReader.readLine();
+                    speakerReader.readLine();
+                }
+            }
+            textReader.close();
+            speakerReader.close();
+        }
+        catch (IOException e) {
+        }
+        line++;
+    }
+    
+    public String getText() {
+        if (textString.equals("END"))
+            end = true;
+        else if (textString.indexOf("[player]") > -1){ //fills in [player] to read username
+            String newText = textString.substring(0, textString.indexOf("[player]")) + playerName + textString.substring(textString.indexOf("[player]") + 8);
+            return newText;
+        }
+        return textString;
+    }
+    
+    public boolean end() {
+        return end;
+    }
+    
+    public String getSpeakerName() {
+        return speakerName;
+    }
+       
+    public int getLine() { //the current line, before it was incremented
+        return line - 1;
+    }
+}
